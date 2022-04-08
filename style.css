@@ -338,9 +338,7 @@ span {
 @media (min-width: 600px) {
     body {
         background-color: var(--Light-Grayish-Violet-app-background);
-
-    }
-    
+    }    
     .bg1 {
         position: absolute;
         width: 38rem;
@@ -351,17 +349,7 @@ span {
       
         border: 0% 0% 50% 50% / 10% 10% 35% 35%;
     }
-    .bg2 {
-        position: absolute;
-        width: 34rem;
-        height: 42.5rem;
-        background-color:var(--bg-light-color);
-        bottom:0px; 
-        margin-left: 90px;       
-        left: 70.7%; 
-        opacity:5%; 
-        border-radius: 50% 50% 0% 0% / 35% 35% 10% 10%; 
-}
+
     .corpo {
         margin: 70px auto;
         
@@ -382,10 +370,17 @@ span {
         .bg1 {
             left: -11.6rem;
         }
-        .bg2 {
-            left:70.7%;
-            bottom: 0%;
-        }
+    .bg2 {
+        position: absolute;
+        width: 34rem;
+        height: 42.5rem;
+        background-color:var(--bg-light-color);
+        bottom:0px; 
+        margin-left: 90px;       
+        left: 70.7%; 
+        opacity:5%; 
+        border-radius: 50% 50% 0% 0% / 35% 35% 10% 10%; 
+}
 
         .corpo { 
             margin-top: 0px;
