@@ -366,6 +366,7 @@ span {
             display: flex;
             height: 100vh;
             align-items: center;
+            overflow: hidden;
         }
         .bg1 {
             left: -11.6rem;
