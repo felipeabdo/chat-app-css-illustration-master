@@ -53,8 +53,7 @@ body {
     position: relative;
     width: 15.4rem;
     height: 31.6rem;
-    margin-top:70px;
-    margin-left:19%;
+    margin: 70px auto;   
     border-radius: 2rem;
     background-color: var(--white);
     padding: 11px 8px;
