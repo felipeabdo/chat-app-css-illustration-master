@@ -1,0 +1,425 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap');
+
+
+
+:root {
+
+    --font: 'Rubik', sans-serif;
+
+    --white: hsl(0, 0%, 100%);
+    --Light-Grayish-Violet-app-background: hsl(270, 20%, 96%);
+    --Very-Dark-Desaturated-Violet-submit-button-background: hsl(271, 36%, 24%);
+    --Very-Light-Magenta-radio-button-outline: hsl(289, 100%, 72%);
+    --grad-bg: linear-gradient(to bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    --bg-light-color: hsl(264, 100%, 61%);
+
+    --grad-nav: linear-gradient(to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    --grad-buttons: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: var(--font);
+}
+
+/* Configurações gerais do Body */
+
+body {
+    background-color: var(--Light-Grayish-Violet-app-background);    
+    /* background-image: url(design/desktop-design-inverted.jpg); */
+
+}
+
+/* Configurações gerais do Background */
+
+.bg1 {
+    position: absolute;
+    width: 165%;
+    height:64.1%;
+    background-image:var(--grad-bg);
+    top:0px;
+    right: 50%;  
+    /* opacity:40%;  */
+    border-radius: 0% 0% 50% 60% / 50% 50% ;
+}
+
+/* Configurações gerais da parte física do celular */
+
+.corpo {
+    position: relative;
+    width: 15.4rem;
+    height: 31.6rem;
+    margin-top:70px;
+    margin-left:19%;
+    border-radius: 2rem;
+    background-color: var(--white);
+    padding: 11px 8px;
+    display: flex;        
+    justify-content: center;
+  }
+.vidro {
+    width: 14.3rem;
+    height: 30.2rem;
+    border-radius: 1.5rem;
+    background-color: var(--Light-Grayish-Violet-app-background); 
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.notch {
+    position: absolute;
+    width: 8rem;
+    height: 1.2rem;
+    border-radius: 0rem 0rem 1rem 1rem ;
+    background-color: var(--white);            
+}
+
+/* Configurações gerais do Nav */
+
+nav {
+    width: 100%;
+    height: 4.1rem;
+    border-radius: 1.5rem 1.5rem 0.5rem 0.5rem;
+    background-image: var(--grad-nav); 
+    display: flex;  
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.nav-wrapper-1 {
+    display: flex;  
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 29%;
+    margin-top: 3px;
+}
+.nav-wrapper-2 {
+    margin-top: 6px;
+    color:aliceblue;            
+}
+.nav-wrapper-2 p {
+    
+    display:block;
+    line-height: 13px
+}
+svg.seta{
+    height: 15px;
+    width: 15px;
+    color: aliceblue;
+    transform: scale(0.6, 1); 
+    font-weight: 900;    
+}
+svg.menu {
+
+    width: 11px; 
+    color: aliceblue;
+    margin-left: 50px; 
+    transform: rotate(90deg);
+    opacity: 70%;
+}
+nav img {
+    width: 2rem;
+    border-radius: 50%;
+    border: 2.5px solid rgba(255, 255, 255, 0.588);
+}
+nav .avatar {
+    font-size: 0.7rem;
+    font-weight: 700;       
+}
+nav .status {
+    font-size: 0.45rem;
+    opacity: 45%;
+}
+
+/* Configurações gerais dos balões de conversa */
+
+.balloon-a {
+    width: 7.5rem;
+    height: 2rem;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.25rem;
+    background-color:hsla(270, 20%, 80%, 0.404); 
+    margin: 0.6rem 6rem 0rem 1rem;  
+    font-family: var(--font);          
+    font-size: 0.469rem;
+    padding: 0.4rem 0 0 0.5rem;       
+    color: rgb(112, 30, 189);
+}
+
+.pics {
+    width: 15rem;
+    height: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    margin-right: 0.2rem;
+}
+.photos {
+    width: 2rem;
+    height: 2rem;
+    border-radius:0.5rem;
+    background-color:gray;
+    margin-right: 0.5rem;
+}
+.pics img {
+    width: 100%;
+    border-radius:0.5rem;
+}
+
+.balloon-b {
+    width: 7.3rem;
+    height: 2rem;
+    border-radius: 0.5rem 0.5rem 0.25rem 0.5rem;
+    background-color: var(--white);  
+    margin: 0rem 0rem 0.6rem 6.3rem;
+    font-family: var(--font);
+    font-size: 0.469rem;
+    padding: 0.4rem 0 0 0.5rem;  
+    color: rgb(112, 30, 189);
+}
+.balloon-b2 {
+    width: 5rem;
+    height: 1.5rem;
+    border-radius: 0.5rem 0.5rem 0.25rem 0.5rem;
+    background-color: var(--white);  
+    margin: 0rem 0rem 0.6rem 8.6rem;
+    font-family: var(--font);
+    font-size: 0.469rem;
+    padding: 0.4rem 0 0 0.5rem;  
+    color: rgb(112, 30, 189);
+}
+
+.balloon-c {
+    width: 7.5rem;
+    height: 2.8rem;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.25rem;
+    background-color:hsla(270, 20%, 80%, 0.404);   
+    margin: 0rem 6rem 0.6rem 1rem;
+    font-family: var(--font);
+    font-size: 0.469rem;
+    padding: 0.4rem 0.4rem 0 0.5rem;
+    color: rgb(112, 30, 189);  
+}
+
+.balloon-d {
+    width: 8.5rem;
+    height: 1.95rem;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.25rem;
+    background-image: var(--grad-buttons);
+    margin: 0rem 0rem 0.6rem 1rem;
+    font-size: 0.58rem;
+    padding: 0.65rem 0rem 0rem 0.1rem;
+    display: flex;
+    justify-content: space-around;           
+}
+
+.balloon-d input {
+    display: none;
+}
+label  {
+    font-family: var(--font);
+    font-size: 0.4rem;
+    color: rgba(255, 255, 255, 0.801);
+}
+.balloon-d input + label::before {
+
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid var(--Very-Light-Magenta-radio-button-outline);
+    box-sizing: border-box;
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+    margin-bottom: 2px;            
+}
+.balloon-d input:checked + label::before {
+
+    width: 12px;
+    height: 12px;
+    background-color:rgba(255, 255, 255, 0.925);
+    box-sizing: border-box;
+    border: 2px solid var(--Very-Light-Magenta-radio-button-outline);
+}
+
+/* Configurações gerais do input text-area */
+
+input {
+    border: none;
+    outline: 0;
+    margin-right: 5%;
+    width: 65%;
+    font-size: 0.6rem;
+    color: var(--Very-Dark-Desaturated-Violet-submit-button-background);
+}
+
+.text-area {
+    width: 12.5rem;
+    height: 2.2rem;
+    border-radius:1rem;
+    background-color: var(--white);
+    font-family: var(--font);  
+    margin: 0rem 0rem 0.6rem 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+button {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+
+.circle {
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color:var(--Very-Dark-Desaturated-Violet-submit-button-background);
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {     
+            
+    margin-right: 5px;
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 0.7rem;
+    color: aliceblue;    
+}
+
+.circle svg {            
+    fill: aliceblue;
+}
+
+.circle:active svg {            
+    fill: rgb(210, 159, 203);
+}
+
+/* Configurações gerais dos textos */
+
+.texto h1 {
+    color: rgb(0, 0, 0);
+    font-family: var(--font);
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-left: 9%;
+    margin-bottom: 1.4rem;
+}
+.texto p {
+    margin-left: 29px;
+    text-align: center;
+    width: 320px;
+    color: rgb(0, 0, 0);            
+    font-size: 0.9.1rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    font-family: var(--font);
+}
+.texto {
+    width: 28rem;
+    margin: 3.5rem 5%;    
+}
+
+
+@media (min-width: 600px) {
+    body {
+        background-color: var(--Light-Grayish-Violet-app-background);
+
+    }
+    
+    .bg1 {
+        position: absolute;
+        width: 38rem;
+        height: 43.7rem;
+        background-image:var(--grad-bg);
+        top:0px;
+        right: 70.70vw;  
+      
+        border: 0% 0% 50% 50% / 10% 10% 35% 35%;
+    }
+    .bg2 {
+        position: absolute;
+        width: 34rem;
+        height: 42.5rem;
+        background-color:var(--bg-light-color);
+        bottom:0px; 
+        margin-left: 90px;       
+        left: 70.7%; 
+        opacity:5%; 
+        border-radius: 50% 50% 0% 0% / 35% 35% 10% 10%; 
+}
+    .corpo {
+        margin: 70px auto;
+        
+    }
+    .texto {
+    position: relative;
+    margin: 0 auto; 
+    }
+    
+
+    @media (min-width: 1150px) {
+
+        body {
+            display: flex;
+            height: 100vh;
+            align-items: center;
+        }
+        .bg1 {
+            left: -11.6rem;
+        }
+        .bg2 {
+            left:70.7%;
+            bottom: 0%;
+        }
+
+        .corpo { 
+            margin-top: 0px;
+            margin-left:25.2%;            
+        }
+        .texto {
+            width: 35rem;
+            margin: 0 0 0 0;   
+            /* background-color: red; 
+            opacity: 40%; */
+        }
+
+        .texto p {
+            width:450px;
+            margin-left: 9%;
+            text-align: left;
+        }
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%);  */

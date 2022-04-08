@@ -1,0 +1,41 @@
+
+*********** Divs principais ************
+body
+main
+
+*********** Celular ********************
+
+notch
+vidro
+corpo
+
+*********** App (containers) ***********
+
+nav
+balloon
+pics
+button
+textarea
+send-button
+
+********** Conteúdo do Celular **********
+
+profile
+name
+status
+3-point-menu
+text-p1
+text-p2
+text-button
+price (h1)
+input-textarea
+
+********** Conteúdo da Página **********
+
+title
+text
+
+
+
+
+
