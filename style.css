@@ -59,6 +59,7 @@ body {
     padding: 11px 8px;
     display: flex;        
     justify-content: center;
+    box-shadow: 5px 7px 30px 7px rgba(0,0,0,0.23);
   }
 .vidro {
     width: 14.3rem;
@@ -388,18 +389,25 @@ span {
 
         .corpo { 
             margin-top: 0px;
-            margin-left:25.2%;            
+            margin-left:25.2%;
+            margin-right: 0px;            
         }
         .texto {
+            position: relative;
             width: 35rem;
-            margin: 0 0 0 0;   
+            margin: 0 0 0 7rem;   
             /* background-color: red; 
             opacity: 40%; */
         }
 
+        .texto h1 {
+            text-align: left;
+            mar
+        }
+
         .texto p {
-            width:450px;
-            margin-left: 9%;
+            margin-left: 0px;
+            width:450px;            
             text-align: left;
         }
 
