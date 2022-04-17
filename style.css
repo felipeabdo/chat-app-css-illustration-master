@@ -40,6 +40,7 @@
 body {
     background-color: var(--Light-Grayish-Violet-app-background);    
     /* background-image: url(design/desktop-design-inverted.jpg); */
+    
 
 }
 
@@ -59,6 +60,7 @@ body {
 /* Configurações gerais da parte física do celular */
 
 .corpo {
+    display: flex;  
     position: relative;
     width: 15.4rem;
     height: 31.6rem;
@@ -66,7 +68,7 @@ body {
     border-radius: 2rem;
     background-color: var(--white);
     padding: 11px 8px;
-    display: flex;        
+          
     justify-content: center;
     box-shadow: 5px 7px 30px 7px rgba(0,0,0,0.23);
   }
@@ -362,6 +364,7 @@ span {
 }
 .texto p {
     margin: 0 auto;
+    margin-bottom: 30px;
     text-align: center;
     width: 320px;
     color: rgb(0, 0, 0);            
@@ -375,6 +378,15 @@ span {
     margin: 3.5rem auto;    
 }
 
+.attribution { 
+    
+    font-size: 0.8rem; 
+    text-align: center; 
+    margin-bottom: 30px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+} 
 
 @media (min-width: 600px) {
     body {
@@ -448,24 +460,12 @@ span {
             width:450px;            
             text-align: left;
         }
-    }
-        
-        
-        
+        .attribution { 
+            text-align: left;     
+        }
+    }    
 
 
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-    /* .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%);  */
