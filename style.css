@@ -379,6 +379,7 @@ span {
     line-height: 1.75rem;
     font-weight: 400;
     font-family: var(--font);
+    opacity: 40%;
 }
 .texto {
     width: 23rem;
