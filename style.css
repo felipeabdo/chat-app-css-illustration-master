@@ -1,5 +1,14 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap');
+@keyframes balloons {
+   0% { transform: scale(0);}
+   60% { transform: scale(1.2);}
+   80% { transform: scale(0.8);}
+   90% { transform: scale(1.1);}
+   95% { transform: scale(0.9);}
+   100% { transform: scale(1);}
+}
+
 
 
 
@@ -141,6 +150,7 @@ nav .status {
 /* Configurações gerais dos balões de conversa */
 
 .balloon-a {
+    animation: balloons 1s;
     width: 7.5rem;
     height: 2rem;
     border-radius: 0.5rem 0.5rem 0.5rem 0.25rem;
@@ -149,7 +159,16 @@ nav .status {
     font-family: var(--font);          
     font-size: 0.469rem;
     padding: 0.4rem 0 0 0.5rem;       
-    color: rgb(112, 30, 189);
+    color: rgb(112, 30, 189);    
+}
+
+
+
+
+.balloon-a.pop2 {
+    animation-delay: 1.5s;
+    transform: scale(0);
+    animation-fill-mode: forwards;
 }
 
 .pics {
@@ -161,6 +180,10 @@ nav .status {
     margin-right: 0.2rem;
 }
 .photos {
+    transform: scale(0);
+    animation: balloons 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
     width: 2rem;
     height: 2rem;
     border-radius:0.5rem;
@@ -173,6 +196,10 @@ nav .status {
 }
 
 .balloon-b {
+    transform: scale(0);
+    animation: balloons 1s;
+    animation-delay: 4.5s;
+    animation-fill-mode: forwards;
     width: 7.3rem;
     height: 2rem;
     border-radius: 0.5rem 0.5rem 0.25rem 0.5rem;
@@ -183,7 +210,12 @@ nav .status {
     padding: 0.4rem 0 0 0.9rem;  
     color: rgb(112, 30, 189);
 }
+
 .balloon-b2 {
+    transform: scale(0);
+    animation: balloons 1s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
     width: 5rem;
     height: 1.5rem;
     border-radius: 0.5rem 0.5rem 0.25rem 0.5rem;
@@ -196,6 +228,10 @@ nav .status {
 }
 
 .balloon-c {
+    transform: scale(0);
+    animation: balloons 1s;
+    animation-delay: 7.5s;
+    animation-fill-mode: forwards;
     width: 7.5rem;
     height: 2.8rem;
     border-radius: 0.5rem 0.5rem 0.5rem 0.25rem;
@@ -208,15 +244,19 @@ nav .status {
 }
 
 .balloon-d {
+    transform: scale(0);
+    animation: balloons 1s;
+    animation-delay: 9s;
+    animation-fill-mode: forwards;
     width: 8.5rem;
     height: 1.95rem;
     border-radius: 0.5rem 0.5rem 0.5rem 0.25rem;
     background-image: var(--grad-buttons);
     margin: 0rem 0rem 0.6rem 1rem;
     font-size: 0.58rem;
-    padding: 0.65rem 0rem 0rem 0.1rem;
+    padding: 0.65rem 1rem 0rem 1rem;
     display: flex;
-    justify-content: space-around;           
+    justify-content: space-between;           
 }
 
 .balloon-d input {
@@ -225,7 +265,7 @@ nav .status {
 label  {
     font-family: var(--font);
     font-size: 0.4rem;
-    color: rgba(255, 255, 255, 0.801);
+    color: rgba(255, 255, 255, 0.801);     
 }
 .balloon-d input + label::before {
 
@@ -261,6 +301,8 @@ input {
     color: var(--Very-Dark-Desaturated-Violet-submit-button-background);
 }
 
+
+
 .text-area {
     width: 12.5rem;
     height: 2.2rem;
@@ -291,8 +333,7 @@ button {
     align-items: center;
 }
 
-span {     
-            
+span {                 
     margin-right: 5px;
     font-family: var(--font);
     font-weight: 700;
@@ -358,6 +399,8 @@ span {
     position: relative;
     margin: 0 auto; 
     }
+
+}
     
 
     @media (min-width: 1150px) {
@@ -397,8 +440,7 @@ span {
         }
 
         .texto h1 {
-            text-align: left;
-            mar
+            text-align: left;            
         }
 
         .texto p {
@@ -406,7 +448,7 @@ span {
             width:450px;            
             text-align: left;
         }
-
+    }
         
         
         
