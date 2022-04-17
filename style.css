@@ -387,9 +387,10 @@ span {
 }
 
 .attribution { 
-    
+    width: 180px;
     font-size: 0.8rem; 
     text-align: center; 
+    margin: 0 auto;
     margin-bottom: 30px;
 }
 .attribution a { 
@@ -434,6 +435,16 @@ span {
     position: relative;
     margin: 0 auto; 
     }
+    .attribution { 
+        width: 100%;
+        font-size: 0.8rem; 
+        text-align: center; 
+        margin: 0 0;
+        margin-bottom: 30px;
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%);
+    } 
 
 }
     
