@@ -483,7 +483,7 @@ span {
         .texto {
             position: relative;
             width: 35rem;
-            margin: 4.5rem 0 0 7rem;   
+            margin: 4.7rem 0 0 7.3rem;   
         }
 
         .texto h1 {
@@ -494,6 +494,7 @@ span {
             margin-left: 0px;
             width:450px;            
             text-align: left;
+            opacity: 30%;
         }
         .attribution { 
             text-align: left;     
