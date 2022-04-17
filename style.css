@@ -35,7 +35,8 @@
     font: var(--font);
 }
 
-/* Configurações gerais do Body */
+/* PT-BR - Configurações gerais do Body */
+/* EN - General body settings */
 
 body {
     background-color: var(--Light-Grayish-Violet-app-background);    
@@ -44,7 +45,8 @@ body {
 
 }
 
-/* Configurações gerais do Background */
+/* PT-BR - Configurações gerais do Background */
+/* EN - Background general settings */
 
 .bg1 {
     position: absolute;
@@ -57,7 +59,8 @@ body {
     border-radius: 0% 0% 50% 60% / 50% 50% ;
 }
 
-/* Configurações gerais da parte física do celular */
+/* PT-BR - Configurações gerais da parte física do celular */
+/* EN - General settings for the physical part of the mobile */
 
 .corpo {
     display: flex;  
@@ -89,7 +92,8 @@ body {
     background-color: var(--white);            
 }
 
-/* Configurações gerais do Nav */
+/* PT-BR - Configurações gerais do Nav */
+/* EN - General Nav Settings */
 
 nav {
     width: 100%;
@@ -149,7 +153,8 @@ nav .status {
     opacity: 45%;
 }
 
-/* Configurações gerais dos balões de conversa */
+/* PT-BR - Configurações gerais dos balões de conversa */
+/* EN - General settings for speech bubbles */
 
 .balloon-a {
     animation: balloons 1s;
@@ -292,7 +297,8 @@ label  {
     border: 2px solid var(--Very-Light-Magenta-radio-button-outline);
 }
 
-/* Configurações gerais do input text-area */
+/* PT-BR - Configurações gerais do input text-area */
+/* EN - General text-area input settings */
 
 input {
     border: none;
@@ -351,7 +357,8 @@ span {
     fill: rgb(210, 159, 203);
 }
 
-/* Configurações gerais dos textos */
+/* PT-BR - Configurações gerais dos textos */
+/* EN - General text settings */
 
 .texto h1 {
     color: rgb(0, 0, 0);
@@ -389,9 +396,17 @@ span {
 } 
 
 @media (min-width: 600px) {
+
+/* PT-BR - Configurações gerais do Body */
+/* EN - General body settings */
+
     body {
         background-color: var(--Light-Grayish-Violet-app-background);
     }    
+
+/* PT-BR - Configurações gerais do Background */
+/* EN - Background general settings */
+
     .bg1 {
         position: absolute;
         width: 38rem;
@@ -403,10 +418,17 @@ span {
         border: 0% 0% 50% 50% / 10% 10% 35% 35%;
     }
 
+/* PT-BR - Configurações gerais da parte física do celular */
+/* EN - General settings for the physical part of the mobile */
+
     .corpo {
         margin: 70px auto;
         
     }
+
+/* PT-BR - Configurações gerais dos textos */
+/* EN - General text settings */
+
     .texto {
     position: relative;
     margin: 0 auto; 
@@ -417,16 +439,24 @@ span {
 
     @media (min-width: 1150px) {
 
+
+/* PT-BR - Configurações gerais do Body */
+/* EN - General body settings */
+
         body {
             display: flex;
             height: 100vh;
             align-items: center;
             overflow: hidden;
         }
+
+/* PT-BR - Configurações gerais do Background */
+/* EN - Background general settings */
+        
         .bg1 {
             left: -11.6rem;
         }
-    .bg2 {
+        .bg2 {
         position: absolute;
         width: 34rem;
         height: 42.5rem;
@@ -438,17 +468,22 @@ span {
         border-radius: 50% 50% 0% 0% / 35% 35% 10% 10%; 
 }
 
+/* PT-BR - Configurações gerais da parte física do celular */
+/* EN - General settings for the physical part of the mobile */
+
         .corpo { 
             margin-top: 0px;
             margin-left:25.2%;
             margin-right: 0px;            
         }
+
+/* PT-BR - Configurações gerais dos textos */
+/* EN - General text settings */
+
         .texto {
             position: relative;
             width: 35rem;
             margin: 0 0 0 7rem;   
-            /* background-color: red; 
-            opacity: 40%; */
         }
 
         .texto h1 {
